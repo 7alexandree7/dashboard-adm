@@ -20,8 +20,8 @@ const NavBar = () => {
             </Link>
 
             <DropdownMenu>
-                <DropdownMenuTrigger>
-                    <Avatar className='focus:outline-none cursor-pointer'>
+                <DropdownMenuTrigger className='focus:outline-none cursor-pointer'>
+                    <Avatar>
                         <AvatarImage alt='avatar' src={'https://github.com/7alexandree7.png'} />
                         <AvatarFallback className='text-black'>AA</AvatarFallback>
                     </Avatar>
@@ -29,10 +29,12 @@ const NavBar = () => {
                 <DropdownMenuContent>
                     <DropdownMenuLabel>My Account</DropdownMenuLabel>
                     <DropdownMenuSeparator />
-                    <DropdownMenuItem>Profile</DropdownMenuItem>
-                    <DropdownMenuItem>Billing</DropdownMenuItem>
-                    <DropdownMenuItem>Team</DropdownMenuItem>
-                    <DropdownMenuItem>Subscription</DropdownMenuItem>
+                    <DropdownMenuItem>
+                        <Link href={'/profile'}>Profile</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                        <Link href={'/logout'}>Logout</Link>
+                    </DropdownMenuItem>
                 </DropdownMenuContent>
             </DropdownMenu>
         </div>
