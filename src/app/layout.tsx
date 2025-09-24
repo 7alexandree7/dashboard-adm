@@ -32,7 +32,7 @@ export default function RootLayout({
       >
         <NavBar />
         <div className="flex">
-          <div className="hidden md:block h-screen w-75">
+          <div className="hidden md:block h-[calc(100vh-56px)] overflow-hidden w-75">
             <SideBar />
           </div>
           <div className="p-5 w-full md:max-w-[1140px]">
