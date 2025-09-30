@@ -21,12 +21,6 @@ import { Button } from '@/components/ui/button'
 import { toast } from 'sonner'
 
 
-interface EditProps {
-  params: {
-    id: string
-  }
-}
-
 const formSchema = z.object({
   title: z.string().min(1, {
     message: "Title is required"
@@ -44,7 +38,7 @@ const formSchema = z.object({
 
 
 
-const Edit = ({ params }: EditProps) => {
+const Edit = ({ params }: { params: { id: string } }) => {
 
   const post = posts.find((post => post.id === params.id))
 
