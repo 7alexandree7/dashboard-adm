@@ -22,7 +22,7 @@ const SideBar = () => {
 
                     <CommandItem>
                         <LayoutDashboard className="mr-2 h-4 w-4" />
-                        <Link href="/dashboard">Dashboard</Link>
+                        <Link href="/">Dashboard</Link>
                     </CommandItem>
 
                     <CommandItem>
