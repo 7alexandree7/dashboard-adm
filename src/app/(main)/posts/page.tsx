@@ -1,7 +1,7 @@
 import React from 'react'
-import PostsTable from '../Components/Posts/PostsTable'
-import BackButton from '../Components/BackButton/BackButton'
-import PostPagination from '../Components/PostPagination/PostPagination'
+import PostsTable from '@/app/Components/Posts/PostsTable'
+import BackButton from '@/app/Components/BackButton/BackButton'
+import PostPagination from '@/app/Components/PostPagination/PostPagination'
 
 const Posts = () => {
   return (

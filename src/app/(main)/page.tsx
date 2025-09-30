@@ -1,7 +1,7 @@
-import DashboardCard from "./Components/DashboardCard/DashboardCard";
+import DashboardCard from '../Components/DashboardCard/DashboardCard';
 import { Folder, MessageCircle, Newspaper, Users } from 'lucide-react'
-import PostsTable from "./Components/Posts/PostsTable";
-import AnalyticsChart from "./Components/AnalyticsChart/AnalyticsChart";
+import PostsTable from '../Components/Posts/PostsTable';
+import AnalyticsChart from '../Components/AnalyticsChart/AnalyticsChart';
 
 
 export default function Home() {
